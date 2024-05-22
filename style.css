@@ -92,7 +92,7 @@ section{
     color: var(--text-light);
 }
 .btn.btn-info{
-    background-color: #9333ea;
+    background-color: beige;
     border-color: #9333ea;
 }
 .btn.btn-info:hover {
