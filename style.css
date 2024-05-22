@@ -49,8 +49,8 @@ li {
     border-color: #9333ea;
 }
 .btn.btn-primary:hover {
-    background-color: purple;
-    border-color: purple;
+    background-color: beige;
+    border-color: beige;
 }
 
 /*home*/
@@ -93,11 +93,11 @@ section{
 }
 .btn.btn-info{
     background-color: beige;
-    border-color: #9333ea;
+    border-color: black;
 }
 .btn.btn-info:hover {
-    background-color: purple;
-    border-color: purple;
+    background-color: beige;
+    border-color: beige;
 }
 
 /*about*/
