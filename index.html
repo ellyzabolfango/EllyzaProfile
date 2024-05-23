@@ -1,131 +1,346 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="images/icon.jpg" type="image/x-icon">
-        <link rel="stylesheet" href="style.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/2191b7e8d0.js" crossorigin="anonymous"></script>
-        <title>Ellyza's Profile</title>
-    </head>
-    <body>
-        <nav>
-            <img src="images/logo.png" alt="" class="logo" >
-            <ul>
-                <li><a class="btn btn-primary" href="#home">Home</a></li>
-                <li><a class="btn btn-primary" href="#about">About</a></li>
-                <li><a class="btn btn-primary" href="#education">Education</a></li>
-                <li><a class="btn btn-primary" href="#skills">Skills</a></li>
-                <li><a class="btn btn-primary" href="#hobbies">Hobbies</a></li>
-                <li><a class="btn btn-primary" href="#photo">Photo</a></li>
-                <li><a class="btn btn-primary" href="#contact">Contact</a></li>
-                <li><a class="btn btn-primary" href="education.html"></a></li>
-                <li><a class="btn btn-primary" href="skills.html"></a></li>
-                <li><a class="btn btn-primary" href="hobbies.html"></a></li>
-                <li><a class="btn btn-primary" href="photo.html"></a></li>
-                <li><a class="btn btn-primary" href="contact.html"></a></li>
-            </ul>
-        </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+
+    <header class="header">
+        <img src="images/logo.png" alt="" class="logo" >
         
-     <!-- Home Section -->
-<section class="home" id="home">
-    <div class="home-content">
-         <a class="btn btn-info" href="#home" role="button"> <strong>Home</strong></a>
-        <div class="welcome-message">
-            <h4>Welcome to my Portfolio!</h4><br>
-            <p>I'm <span class="name">Ellyza Jane M. Bolfango,</span> the heart and soul behind this website. This website isn't just a place on the web—it's my cozy corner, where every detail is infused with passion and care. I've poured my soul into crafting an experience that feels like a warm hug from an old friend. So, whether you're dropping by for a quick chat or diving deep into what we have to offer, know that you're not just a visitor—you're part of the family. "Where every click feels like a conversation. Welcome to Ellyza's Profile, where personalized experiences meet professional excellence."</p><br>
-         <a class="btn btn-info" href="#about" role="button"> <strong>About</strong></a>
-        <div class="home-img">
+        <i class="bx bx-menu" id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#hobbies">Hobbies</a>
+            <a href="#photo">Photo</a>
+        </nav>
+            <a href="#contact" class="contact">Contact Me</a>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hi, I'm <span>Ellyza Jane</span></h1>
+            <h3> a student of <span>Northwest Samar State University</span></h3>
+            <p> The heart and soul behind this website. This website isn't just a place on the web—it's my cozy corner, where every detail is infused with passion and care. I've poured my soul into crafting an experience that feels like a warm hug from an old friend. So, whether you're dropping by for a quick chat or diving deep into what we have to offer, know that you're not just a visitor—you're part of the family. "Where every click feels like a conversation. Welcome to Ellyza's Profile, where personalized experiences meet professional excellence."</p><br>
+            </p>
+                <div class="social-icons">
+                    <a href="#">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="">
+                        <i class='bx bxl-facebook' ></i>
+                    </a>
+                    <a href="">
+                        <i class='bx bxl-instagram' ></i>
+                    </a>
+                </div>
+
+                <div class="btn-group">
+                    <a href="#" class="btn">Lets Talk</a>
+                    <a href="#contact" class="btn">Contact Me</a>
+                </div>        
         </div>
+
+        <div class="home-img">
+            <img src="jason.jpg" alt="">
+        </div>
+    </section>
+<!--ABOUT ME SECTION-->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="jason.jpg" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2>About <span>Me</span></h2>
+            <p>I am Ellyza Jane M. Bolfango, I lived in Brgy Viejo, Pagsanghan Samar. I'm a passionate individual who loves learning new things and exploring different hobbies. 
+                I am currently studying at Northwest Samar State University with a course in BS information technology. 
+        </p>
+                <a href="#" class="btn">Read More</a>
+        </div>
+    </section>
+    <section>
+        <h2>Who I <span>Am</span>?</h2>
+        <video src="JASON.mp4" width="1200" height="900"controls></video>
+    </section>
+
+<!--EDUCATION SECTION-->
+    <section class="education" id="education">
+        <h2 class="heading"><strong></strong><span><strong>BACKGROUND</strong>S</span></h2>
+        <div class="education-container">
+            <img src="graduation.png" alt="" width="800" height="600">
+            <ul class="MyGraduationpic">
+            <div class="education-boxlow">
+                <div class="education-info">
+                    <i class='bx bxs-calendar'></i>
+                    <h4>2015-2016</h4>
+                    <h3>ELEMENTARY</h3>
+                    <p>I Finished my elementary at Pagsanghan Central Elementary School Sy: 2015-2016
+                        I am very outstanding during my elementary days, and I participated a lot of
+                        school activities, like arts, journalism, and also sports.</p>
+                </div>
+            </div>
+
+            <div class="education-boxmid">
+                <div class="education-info">
+                    <i class='bx bxs-calendar'></i>
+                    <h4>2019-2020</h4>
+                    <h3>HIGHSCHOOL</h3>
+                    <p>I finished my highschool at Pagsanghan National Highschool. But during this days, i only participated few of the activities beacuse of my heart condition.</p>
+                </div>
+            </div>
+
+            <div class="education-boxhigh">
+                <div class="education-info">
+                    <i class='bx bxs-calendar'></i>
+                    <h4>2021-2024</h4>
+                    <h3>COLLEGE</h3>
+                    <p>I am currently studying at NorthWest Samar State University </p><br>
+                </div>
+            </div>
+
+            <div class="Academic Achievements">
+                <p><h2>Academic Achievements</h2><br>
+                    <ul>
+                        <li><p>Dean's List for Academic Excellence, 2022-2023</p></li>
+                        <li><p>With honor, 2021-2022</p></li>
+                        <li><p>With honor, 2020-2021</p></li>
+                        <li><p>With high honor, 2019-2020</p></li>
+                        <li><p>With honor, 2018-2019</p></li>
+                        <li><p>With honor, 2017-2018</p></li>
+                        <li><p>Achiever, 2016-2017</p></li>
+                        <li><p>With honor, 2015-2016</p></li>
+                        <li><p>Third honor, 2012-2013</p></li>
+                        <li><p>Second honor, 2008-2009</p></li><br>
+                    </ul>
+                
+                    <h2>Educational Journey and Career Path</h2><br>
+                    <p>My educational journey has been an adventure of self-discovery and growth. From the excitement of earning my bachelor's degree in Information technology to the deeper insights gained during my master's program, each step has shaped my perspective and fueled my passion for learning.
+                        Along the way, I've had the honor of receiving recognition for my academic achievements, including making the Dean's List for Academic Excellence. These moments of acknowledgment served as milestones in my journey, affirming my dedication to my studies and motivating me to reach higher.
+                        As I reflect on my educational path, I realize how each degree, diploma, and certification has paved the way for my career. They've not only equipped me with valuable knowledge and skills but also instilled in me a sense of purpose. Armed with this education and driven by my passion, I'm ready to embark on new challenges and make a meaningful impact in another journey of our lives.</p></p>
+            </div>
+        </div>
+
+        <!--SKILLS SECTION-->
+<section class="skills" id="skills">
+    <h2 class="head"><strong>TECHNICAL SKILLS</strong></h2>
+    <div class="skill-bar">
+
+        <!--PROGRESS BAR FOR HTML-->
+        <div class="bar">
+            <div class="info">
+                <span>HTML</span>
+            </div>
+            <div class="progress-line html">
+                <span></span>
+            </div>
+            <div class="percentageHTML">
+                <p>50%</p>
+            </div>
+        </div>
+
+        <!--PROGRESS BAR FOR CSS-->
+        <div class="bar">
+            <div class="info">
+                <span>CSS</span>
+            </div>
+            <div class="progress-line css">
+                <span></span>
+            </div>
+            <div class="percentageCSS">
+                <p>40%</p>
+            </div>
+        </div>
+
+        <!--PROGRESS BAR PHOTOGRAPHY-->
+        <div class="bar">
+            <div class="info">
+                <span>PHOTOGRAPHY</span>
+            </div>
+            <div class="progress-line photoediting">
+                <span></span>
+            </div>
+            <div class="percentagePE">
+                <p>80%</p>
+            </div>
+        </div>
+
+        <!--PROGRESS BAR FOR JavaScript-->
+        <div class="bar">
+            <div class="info">
+                <span>JavaScript</span>
+            </div>
+            <div class="progress-line js">
+                <span></span>
+            </div>
+            <div class="percentageJS">
+                <p>50%</p>
+            </div>
+        </div>
+
+        <!--PROGRESS BAR FOR SQL-->
+        <div class="bar">
+            <div class="info">
+                <span>SQL</span>
+            </div>
+            <div class="progress-line photoediting">
+                <span></span>
+            </div>
+            <div class="percentagePE">
+                <p>70%</p>
+            </div>
+        </div>
+
     </div>
 </section>
 
-        <!--About-->
-        <section class="About" id="About">
-            <div class="about-img">
-            </div>
-            <div class="about-text">
-                <p>I'm a passionate individual who loves learning new things and exploring different hobbies. 
-                    I am currently studying at Northwest Samar State University with a course in BS information technology. 
-                    In my almost 2 years at university, I've learned about programming languages. 
-                    The languages that I learned are Java, HTML, CSS, and a little bit about Python.
-                </p>
-                <a class="btn btn-info" href="#education" role="button"> <strong>Education</strong></a>
-            </div>   
+<!--SOFT SKILLS SECTION-->
+<section class="soft-skills" id="soft-skills">
+    <h2 class="head"><strong>SOFT SKILLS</strong></h2>
+
+   <!--PROGRESS BAR FOR PROBLEM SOLVING-->
+   <div class="bar">
+    <div class="info">
+        <span>PROBLEM SOLVING</span>
+    </div>
+    <div class="progress-line ProblemSolving">
+        <span></span>
+    </div>
+    <div class="percentageProblemSolving">
+        <p>60%</p>
+    </div>
+</div>
+
+<!--PROGRESS BAR FOR COMMUNICATION-->
+<div class="bar">
+    <div class="info">
+        <span>COMMUNICATION</span>
+    </div>
+    <div class="progress-line COMMUNICATION">
+        <span></span>
+    </div>
+    <div class="percentageCOMMUNICATION">
+        <p>90%</p>
+    </div>
+</div>
+
+<!--PROGRESS BAR FOR ADAPTABILITY-->
+<div class="bar">
+    <div class="info">
+        <span>ADAPTABILITY</span>
+    </div>
+    <div class="progress-line ADAPTABILITY">
+        <span></span>
+    </div>
+    <div class="percentageADAPTABILITY">
+        <p>750%</p>
+    </div>
+</div>
+
+<!--PROGRESS BAR FOR LEDEARSHIP-->
+<div class="bar">
+    <div class="info">
+        <span>LEDEARSHIP</span>
+    </div>
+    <div class="progress-line LEDEARSHIP">
+        <span></span>
+    </div>
+    <div class="percentageLEDEARSHIP">
+        <p>90%</p>
+    </div>
+</div>
+
+<!--PROGRESS BAR FOR TIME MANANGEMENT-->
+<div class="bar">
+    <div class="info">
+        <span>TIME MANANGEMENT</span>
+    </div>
+    <div class="progress-line TIME MANANGEMENT">
+        <span></span>
+    </div>
+    <div class="percentageTIMEMANANGEMENT">
+        <p>90%</p>
+    </div>
+</div>
+
+<!--PROGRESS BAR FOR EMOTIONAL INTELLIGENCE-->
+<div class="bar">
+    <div class="info">
+        <span>EMOTIONAL INTELLIGENCE</span>
+    </div>
+    <div class="progress-line EMOTIONAL INTELLIGENCE">
+        <span></span>
+    </div>
+    <div class="percentageEMOTIONALINTELLIGENCE">
+        <p>90%</p>
+    </div>
+</div>
+    </div>
+</section>
+
+        <!--Hobbies Section-->
+        <section class="hobbies" id="hobbies">
+            <h2 class="head"><strong>HOBBIES</strong></h2>
+            <ul>
+                <li><p> Watching GL Series</p></li>
+                <li><p> Cooking</p></li>
+                <li><p> Playing sports</p></li>
+                <li><p> Drawing</p></li>
+            </ul>
         </section>
 
-        <!--education-->
-        <section class="education" id="education">
-            <div class="row">
-                <div class="container">
-                    <h4><em>Educational Background</em></h4>
-                </div>
-                <div class="container">
-                    <h5>Degrees</h5>
-                    <p>Bachelor of Science in Information technology at Northwest Samar State University.</p>
-                </div>
-                <div class="container">
-                    <h5>Certifications</h5>
-                    <p>n/a</p>
-                </div>
-                <div class="container">
-                    <h5>Academic Achievements</h5>
-                    <p>Dean's List for Academic Excellence, 2022-2023</p>
-                    <p>With honor, 2021-2022</p>
-                    <p>With honor, 2020-2021</p>
-                    <p>With high honor, 2019-2020</p>
-                    <p>With honor, 2018-2019</p>
-                    <p>With honor, 2017-2018</p>
-                    <p>Achiever, 2016-2017</p>
-                    <p>With honor, 2015-2016</p>
-                    <p>Third honor, 2012-2013</p>
-                    <p>Second honor, 2008-2009</p>
-                    <h5>Educational Journey and Career Path</h5>
-                    <p>My educational journey has been an adventure of self-discovery and growth. From the excitement of earning my bachelor's degree in Information technology to the deeper insights gained during my master's program, each step has shaped my perspective and fueled my passion for learning.
-                        Along the way, I've had the honor of receiving recognition for my academic achievements, including making the Dean's List for Academic Excellence. These moments of acknowledgment served as milestones in my journey, affirming my dedication to my studies and motivating me to reach higher.
-                        As I reflect on my educational path, I realize how each degree, diploma, and certification has paved the way for my career. They've not only equipped me with valuable knowledge and skills but also instilled in me a sense of purpose. Armed with this education and driven by my passion, I'm ready to embark on new challenges and make a meaningful impact in another journey of our lives.</p>
-                    <a class="btn btn-info" href="#education" role="button">Education</a>
-                </div>
-            </div>
+        <!--Photos Section-->
+        <section class="Photos" id="photo">
+            <h2 class="HEADPHOTO">MY PHOTOS</h2>
+            <ul class="MyAlbums">
+                <li>
+                    <img src="Pre-debut.jpg" width="400" height="400" alt="">
+                </li>
+                <li>
+                    <img src="shoot.jpg" width="400" height="400" alt="">
+                </li>
+                <li>
+                    <img src="pink.jpg" width="400" height="400" alt="">
+                </li>
+                <li>
+                    <img src="srsly.jpg" width="400" height="400" alt="">
+                </li>
+                <li>
+                    <img src="gwenchana.jpg" width="400" height="400" alt="">
+                </li>
+                <li>
+                    <img src="beach.jpg" width="400" height="400" alt="">
+                </li>
+                <li>
+            
+            </ul>
         </section>
-
-        <!--Skills-->
-        <section class="skills" id="skills">
-            <h1>Skills</h1>
-            <div class="container-skills">
-                <div class="skills-img">
-                <img src="img/akumi.png" alt="">
-            </div>
-                <div class="descript">
-                <h3>None yet :]</h3>
-                <p>None to be shown UWU</p>
-                <br>
-                <a href="" class="btn-github">CodeLink<i class="fa-brands fa-github"></i></a>
-            </div>
-        </section>
-
-        <!--contacts-->
+        <!--MY CONTACT SECTION PART-->
         <section class="contacts" id="contacts">
             
-                <div class="contact-desc">
-                    <h2>Contact</h2>
-                    <p class="p-con">You can email or call me here...</p>
-                    <p><i class="fa-solid fa-envelope"> </i> manzaneroellyzajane@gmail.com</p>
-                    <p><i class="fa-solid fa-phone-volume"></i> +639750847361</p>
-                    <p class="p-con">You can also visit my social media accounts</p>
-                    <a="https://www.facebook.com/profile.php?id=100080716255015"="</p>
-                    <a=""
-                </div>
-                <div class="contact-img">
-                    <img src="images/contact.png" alt="" width="150" height="100">
-                </div>
-            
-        </section>
+            <div class="contact-desc">
+                <h2>Contact</h2>
+                <p class="p-con">You can email or call me here...</p>
+                <p><i class="fa-solid fa-envelope"> </i> manzaneroellyzajane@gmail.com</p>
+                <p><i class="fa-solid fa-phone-volume"></i> +639750847361</p>
+                <p class="p-con">You can also visit my social media accounts</p>
+                <a="https://www.facebook.com/profile.php?id=100080716255015"="</p>
+            </div>
+            <div class="contact-img">
+                <img src="images/contact.png" alt="" width="150" height="100">
+            </div>
+        
+    </section>
 
-        <!--footer-->
-        <div class="footer">
-            <p class="copyright">© 2024 Ellyza Jane Manzanero Bolfango. All rights reserved.</p>
-        </div>
-    </body>
+     <script src="script.js"></script>
 </html>
+</body>
