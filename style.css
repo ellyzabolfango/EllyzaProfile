@@ -1,252 +1,263 @@
+/* style.css */
 
-  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400&family=Poppins:wght@100;500;600;700&display=swap');
-:root{
---primary-color: #a855f7;
---primary-color-dark:#9333ea;
---secondary-color: #ca8a04;
---text-dark: #1f2937;
---text-light: #6b7280;
---extra-light:#faf5ff;
---text-color:#fff;
---big-font: 3.6rem;
---h2-font: 2.26rem;
---p-font:1.1rem;
-
+/* Global Styles */
+body {
+    font-family: 'Arial', 'script';
+    line-height: 1.6;
+    color: #333;
+    background-color: khaki; /* Khaki background color */
 }
-*{
-    padding: 0;
-    margin: 0;
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Script', cursive;
+    font-weight: bold;
+    color: #1a1a1a; /* Darker text color for headings */
+}
+
+a {
+    color: #ff6600;
     text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-}
-body{
-    font-family: 'Poppins', 'sans-serif';
+    transition: color 0.3s ease;
 }
 
-/*navigation*/
-nav {
-    background-color: #f8f9fa;
-    padding: 20px 0;
-    position: sticky;
-    top: 0;
-}
-.logo {
-    max-width: 170px;
-    margin-left: 10%;
-}
-ul {
-    float: right;
-    list-style-type: none;
-}
-li {
-    display: inline-block;
-    margin-right: 30px;
-    margin-top: 25px;
-}
-.btn.btn-primary{
-    background-color: #9333ea;
-    border-color: #9333ea;
-}
-.btn.btn-primary:hover {
-    background-color: beige;
-    border-color: beige;
+a:hover {
+    color: #e65c00;
 }
 
-/*home*/
-section{
-    padding: 75px 16.7%;
-}
-.home{
-    width: 100%;
-    min-height: 95vh;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid: 5rem;
-    align-items: center;
-    padding: 50px 16.7%;
-}
-.home-img img{
-    max-width: 65%;
-    height: auto;
-    border-radius: 10px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-left: 5%;
-}
-.home-text h1{
-    font-size: 2.3rem;
-    margin-bottom: 15px;
-    color: #9333ea;
-}
-.home-text p{
-    max-width: 100%;
-    width: 430px;
-    font-size: 18x;
-    line-height: 1.4;
-    margin-bottom: 20px;
-    color: var(--text-light);
-}
-.name{
-    font-size: 15px;
-    font-style: italic;
-    color: var(--text-light);
-}
-.btn.btn-info{
-    background-color: beige;
-    border-color: black;
-}
-.btn.btn-info:hover {
-    background-color: beige;
-    border-color: beige;
-}
-
-/*about*/
-.about{
-    background-color: #f4f4f9;
-    display: grid;
-    grid-template-columns: repeat(2, 2fr);
-   
-    align-items: center;
-    padding-top: 100px;
-    padding: 30px 16.7%;
-}
-.about-img img{
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-left: 5%;
-}
-.about-text h2{
-    color: #9333ea;
-    margin-bottom: 15px;
-}
-.about-text p{
-    font-size: var(--p-font);
-    color: var(--text-light);
-    line-height: 1.4;
-    margin-bottom: 15px;
-    text-align: justify;
-}
-
-/*skills*/
-.skills{
-    background-color: #f4f4f9;
-    padding: 5rem 10rem;
-}
-.skills h2{
-    color: #9333ea;
-    text-align: center;
-    margin-bottom: 15px;
-}
-.row {
+/* Header */
+.header {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-}
-.container {
-    flex: 0 0 calc(25% - 10px);
-    margin-bottom: 20px; 
-    text-align: center; 
-}
-.container img {
-    max-width: 80%;
-    margin-top: 10px; 
-    border-radius: 10px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-.container p {
-    margin-top: 5%; 
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/*projects*/
-.projects h1{
-    color: #9333ea;
+.logo {
+    width: 80px;
 }
-.container-proj{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background-color: #f4f4f9;
-    margin: 70px auto 0;
-    padding: 2rem 1.5rem;
+
+.navbar a {
+    margin-right: 20px;
+}
+
+.contact {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
     border-radius: 5px;
-    box-shadow: 0 25px 25px -10px rgba(0,0,0.5);
+    transition: background-color 0.3s ease;
 }
 
-.container-proj img{
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    top: 0; 
-    padding-right: 10px;
+.contact:hover {
+    background-color: #e65c00;
 }
 
-.container-proj img:hover{
-    transform: scale(1.2) translateX(10px);
-    transition: .5s;
-   
-}
-.container-proj h3{
-    color: var(--text-dark);
-    
-}
-.container-proj p{
-    color: var(--text-light);
-    
-}
-.btn-github {
-    font-size: 17px;
-    padding: 5px 13px;
-    text-decoration: underline;
-    color: var(--primary-color-dark);
-}
-.btn-github:hover{
-    cursor: pointer;
-}
-.descript a{
-    background: transparent;
-    
+/* Home */
+.home {
+    padding: 100px 20px;
 }
 
-/*login*/
-.content{
-    padding: 100px;
+.home-content {
+    max-width: 50%;
 }
 
-/*contact*/
-.contacts {
+.social-icons a {
+    margin-right: 10px;
+}
+
+.btn {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e65c00;
+}
+
+/* About */
+.about {
+    padding: 100px 20px;
+    background-color: khaki;
+}
+
+.about-content {
+    max-width: 50%;
+}
+
+/* Education */
+.education {
+    padding: 100px 20px;
+    background-color: khaki;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: 20px 16.7%;
-    text-align: center;
-    background-color:  #f4f4f9;
+    flex-direction: column;
 }
-.contact-desc {
-    max-width: 100%;
+
+/* Skills */
+.skills {
+    padding: 100px 20px;
+    background-color: khaki;
+}
+
+/* Progress bar styles */
+.skills .bar {
     margin-bottom: 20px;
 }
-.contact-desc h2{
-    color: var(--primary-color-dark);
-}
-.contact-desc p{
-    color: var(--text-dark);
-}
-.contact-desc .p-con{
-    color: #6b7280;
-}
-.contact-img img {
-    max-width: 100%;
-    height: auto;
+
+
+.bar .info {
+    margin-bottom: 5px;
 }
 
-/*footer*/
-.footer{
-    background-color: var(--primary-color);
+.bar .progress-line {
+    height: 8px;
+    background-color: gray; /* Background color of the progress bar */
+    border-radius: 4px;
+    overflow: hidden; /* Hide overflowing progress */
 }
-.footer .copyright{
-    color: var(--text-dark);
-    text-align: center;
-    padding: 10px 16.7%;
+
+.bar .progress-line span {
+    display: block;
+    height: 60%;
+    background-color: #4CAF50; /* Color of the progress bar */
+    transition: width 0.5s ease-in-out; /* Smooth transition animation */
+    width: 0; /* Initially set width to 0 */
+}
+
+/* Adjust width based on percentage */
+.skills .percentageHTML ~ .bar .progress-line span {
+    width: calc(var(--percentage) * 60%);
+}
+
+.percentageProblemSolving p,
+.percentageCOMMUNICATION p,
+.percentageADAPTABILITY p,
+.percentageLEDEARSHIP p,
+.percentageTIMEMANANGEMENT p,
+.percentageEMOTIONALINTELLIGENCE p {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+/* Adjust the width of the progress bar based on percentage */
+.percentageProblemSolving span {
+    width: 60%; /* Change the width percentage as needed */
+}
+
+.percentageCOMMUNICATION span {
+    width: 90%; /* Change the width percentage as needed */
+}
+
+.percentageADAPTABILITY span {
+    width: 75%; /* Change the width percentage as needed */
+}
+
+.percentageLEDEARSHIP span {
+    width: 90%; /* Change the width percentage as needed */
+}
+
+.percentageTIMEMANANGEMENT span {
+    width: 90%; /* Change the width percentage as needed */
+}
+
+.percentageEMOTIONALINTELLIGENCE span {
+    width: 90%; /* Change the width percentage as needed */
+}
+
+/* Adjust the width dynamically based on percentage */
+.bar .progress-line span {
+    width: 0; /* Initial width */
+}
+
+.bar .percentageProblemSolving span {
+    width: 60%; /* Change the width dynamically based on the percentage */
+}
+
+.bar .percentageCOMMUNICATION span {
+    width: 90%; /* Change the width dynamically based on the percentage */
+}
+
+.bar .percentageADAPTABILITY span {
+    width: 75%; /* Change the width dynamically based on the percentage */
+}
+
+.bar .percentageLEDEARSHIP span {
+    width: 90%; /* Change the width dynamically based on the percentage */
+}
+
+.bar .percentageTIMEMANANGEMENT span {
+    width: 90%; /* Change the width dynamically based on the percentage */
+}
+
+.bar .percentageEMOTIONALINTELLIGENCE span {
+    width: 90%; /* Change the width dynamically based on the percentage */
+}
+
+
+/* Photos */
+.Photos {
+    padding: 100px 20px;
+    background-color: khaki;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Photos .MyAlbums {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Photos .MyAlbums li {
+    margin: 10px;
+}
+
+.Photos .MyAlbums img {
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.Photos .MyAlbums img:hover {
+    transform: scale(1.05);
+}
+
+/* Contacts */
+.contacts {
+    padding: 100px 20px;
+    background-color:khaki;
+}
+
+.Photos .MyAlbums img {
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    transition: transform 0.3s ease;
+}
+
+.Photos .MyAlbums img:hover {
+    transform: scale(1.05); /* Increase size on hover */
+}
+
+.contact-desc {
+    max-width: 50%;
+}
+
+.contact-desc a {
+    color: #ff6600;
+    transition: color 0.3s ease;
+}
+
+.contact-desc a:hover {
+    color: #e65c00;
 }
