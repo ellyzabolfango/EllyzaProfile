@@ -1,263 +1,647 @@
-/* style.css */
-
-/* Global Styles */
-body {
-    font-family: 'Arial', 'script';
-    line-height: 1.6;
-    color: #333;
-    background-color: khaki; /* Khaki background color */
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration:none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth ;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Script', cursive;
-    font-weight: bold;
-    color: #1a1a1a; /* Darker text color for headings */
+html{
+    font-size: 60%;
+    overflow-x: hidden;
+}
+:root{
+    --bg-color: #272829;
+    --second-bg-color:#61677A;
+    --text-color: #FFF7D4;
+    --main-color: #FFD95A;
 }
 
-a {
-    color: #ff6600;
-    text-decoration: none;
-    transition: color 0.3s ease;
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
 }
 
-a:hover {
-    color: #e65c00;
-}
-
-/* Header */
-.header {
-    background-color: #1a1a1a;
-    color: #fff;
-    padding: 20px;
+.header{
+    position: fixed;
+    width: 100%;
+    top:0;
+    left: 0;
+    padding: 4rem 12%;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+#menu-icon{
+    font-size: 3.6rem ;
+    color: var(--main-color);
+    display: none;
+}
+.logo{
+    font-size: 3rem;
+    color: var(--text-color);
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s ease;
 }
 
-.logo {
-    width: 80px;
+.logo:hover{
+    transform: scale(1.1);
 }
 
-.navbar a {
-    margin-right: 20px;
+span{
+    color: var(--main-color);
+}
+.navbar a{
+    font-size: 2.0rem;
+    color: var(--text-color);
+    margin-left:4rem;
+    font-weight: 500;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+.navbar a:hover{
+    border-bottom: 3px solid var(--main-color);
+    color: var(--main-color);
+}
+/*button for Contact*/
+.contact{
+    padding: 10px 28px;
+    background-color: white ;
+    color: black;
+    border: 2px solid transparent ;
+    border-radius:8px;
+    font-size:16px;
+    letter-spacing:1px;
+    font-weight:600;
+    transition: 0.3s ease;
+}
+.contact:hover{
+    background-color: var(--main-color);
+    box-shadow: 0 0 25px var(--main-color);
+    color: white;
+}
+/*Home Section*/
+section{
+    min-height: 100vh;
+    padding: 10rem 12%;
+}
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15rem;
+}
+.home-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align:  right;
+
+}
+.home-content h1{
+    font-size: 8rem;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    line-height: 1;
+}
+.home-content h3{
+    font-size: 4rem;
+    margin: 1rem 0;
+}
+.home-content p{
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.8;
+    text-align: justify;
+}
+/*Home Image*/
+.home-img img{
+    max-width: 60vh;
+    max-height: 80vh;
+    border-radius: 0px;
+    box-shadow: 0 0 25px var(--main-color);
+    transition: 0.4s ease-in-out;
+}
+.home-img img:hover{
+    box-shadow: 0 0 25px var(--main-color),
+}
+.social-icons a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    padding: 1rem;
+    background: transparent;
+    border: 2px solid var(--main-color);
+    border-radius: 50%;
+    color: var(--main-color);
+    margin: 3rem 0.5rem;
+    transition: 0.3s ease;
+}
+.social-icons a:hover{
+    color: var(--text-color);
+    background-color: var(--main-color);
+    transform: scale(1.2) translateY(-5px);
+    box-shadow: 0 0 25px var(--main-color);
 }
 
-.contact {
-    background-color: #ff6600;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+/*Buttons for TALK AND CONTACT ME*/
+.btn-group{
+    display: flex;
+    gap: 1.5rem;
+}
+.btn{
+    display: inline-block;
+    padding: 1rem 3rem;
+    background: var(--main-color);
+    box-shadow: 0 0 5px var(--main-color);
+    border-radius: 1rem;
+    font-size: 1.8rem;
+    color: var(--text-color);
+    border: 2px solid transparent;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+}
+.btn:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px var(--main-color),
+                0 0 10px var(--main-color);
+}
+.btn-groupa a:nth-of-type(2){
+    background-color: black;
+    color: var(--main-color);
+    border: 2px var(--main-color);
+    box-shadow: 0 0 25px transparent;
+}
+.btn-group a:nth-of-type(2):hover{
+    box-shadow: 0 0 20px var(--main-color);
+    background-color: var(--main-color);
+    color: black;
 }
 
-.contact:hover {
-    background-color: #e65c00;
-}
-
-/* Home */
-.home {
-    padding: 100px 20px;
-}
-
-.home-content {
-    max-width: 50%;
-}
-
-.social-icons a {
-    margin-right: 10px;
-}
-
-.btn {
-    background-color: #ff6600;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    margin-right: 10px;
-    transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-    background-color: #e65c00;
-}
-
-/* About */
-.about {
-    padding: 100px 20px;
-    background-color: khaki;
-}
-
-.about-content {
-    max-width: 50%;
-}
-
-/* Education */
-.education {
-    padding: 100px 20px;
-    background-color: khaki;
+/*ABOUT ME DESIGN LAYER*/
+.about{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 10rem;
+    background-color: var(--second-bg-color);
+}
+
+
+.about-img img{
+    align-items: left;
+    width:32vw;
+    border-radius: 0px;
+    transition: 0.4s ease-in-out;
+}
+
+.about-content h2{
+    text-align: right;
+    font-size: 7rem;
+    text-align: left;
+}
+.about-content p{
+    align-items: right;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--main-color);
+}
+::-webkit-scrollbar-track{
+    background-color: var(--bg-color);
+}
+
+/*Education DESIGN LAYER*/
+.heading{
+    text-align: center;
+    font-size: 7rem;
+    margin: 5rem 0;
+}
+.education{
+    background-color: var(--bg-color);   
+    color: black;
+}
+.education h2{
+    color: var(--text-color);
+}
+.education-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    gap: 2.5rem;
+}
+/*BOX FOR EDUCATIONAL BACKGROUND*/
+
+.education-boxlow{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+    height: 440px;
+    border-radius: 3rem;
+    cursor: pointer;
+    border: 5px solid transparent;
+    transition: 0.4s ease-in-out;
+}
+.education-boxmid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+    height: 440px;
+    border-radius: 3rem;
+    cursor: pointer;
+    border: 5px solid transparent;
+    transition: 0.4s ease-in-out;
+}
+
+.education-boxhigh{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+    height: 440px;
+    border-radius: 3rem;
+    cursor: pointer;
+    border: 5px solid transparent;
+    transition: 0.4s ease-in-out;
+}
+.education-boxlow:hover{
+    background-color: var(--second-bg-color);
+    color: var(--main-color);
+    border: 5px solid var(--main-color);
+    transform: scale(1.03);
+}
+.education-boxmid:hover{
+    background-color: var(--second-bg-color);
+    color: var(--main-color);
+    border: 5px solid var(--main-color);
+    transform: scale(1.03);
+}
+.education-boxhigh:hover{
+    background-color: var(--second-bg-color);
+    color: var(--main-color);
+    border: 5px solid var(--main-color);
+    transform: scale(1.03);
+}
+.education-info{
+    display: flex;
     flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+}
+.education-info i{
+    font-size: 8rem;
+}
+.education-info h4{
+    font-size: 4rem;
+    margin: 2rem 0;
+    font-weight: 600;
 }
 
-/* Skills */
-.skills {
-    padding: 100px 20px;
-    background-color: khaki;
+.education-info h3{
+    font-size: 3rem;
+    margin: 2rem 0;
+    font-weight: 600;
+}
+.education-info p{
+    font-size: 17px;
+    font-weight: 450;
+    line-height: 1.7;
 }
 
-/* Progress bar styles */
-.skills .bar {
-    margin-bottom: 20px;
+
+
+  /*SKILLS DESIGNING PART*/
+.head{
+    text-align: left;
+    font-size: 7rem;
+    margin: 5rem 0;
 }
-
-
-.bar .info {
+.skills{
+    background-color: var(--second-bg-color); 
+}
+.skills h2{
+    margin-bottom: 2rem;
+}
+.skills{
+    margin: 0 auto;
+}
+.skill-bar{
+    margin-top: 0rem;
+    padding: 25px 30px;
+    background: var(--bg-color);
+    border: 2px solid var(--main-color);
+    border-radius: 10px;
+    display: flex;
+    flex-direction:column;
+    gap: 1rem;
+}
+.skill-bar .bar{
+    margin: 20px 0;
+}
+.skill-bar .bar:first-child{
+    margin-top: 0px;
+}
+.skill-bar .bar .info{
     margin-bottom: 5px;
 }
-
-.bar .progress-line {
-    height: 8px;
-    background-color: gray; /* Background color of the progress bar */
-    border-radius: 4px;
-    overflow: hidden; /* Hide overflowing progress */
+.skill-bar .bar .info span{
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 17px;
 }
 
-.bar .progress-line span {
-    display: block;
-    height: 60%;
-    background-color: #4CAF50; /* Color of the progress bar */
-    transition: width 0.5s ease-in-out; /* Smooth transition animation */
-    width: 0; /* Initially set width to 0 */
+/*PROGRESS LINE OF SKILLS*/
+.skill-bar .bar .progress-line{
+    height: 15px;
+    width: 100%;
+    background: rgb(45, 152, 179);
+    position: relative;
+    border-radius: 10px;
+}
+.bar .bar .progress-line span{
+    height: 100%;
+    position: absolute;
+    border-radius: 10px;
+    background: rgb(45, 152, 179);
+    cursor: pointer;
 }
 
-/* Adjust width based on percentage */
-.skills .percentageHTML ~ .bar .progress-line span {
-    width: calc(var(--percentage) * 60%);
+.bar .progress-line.html{
+    width:90%;
+    background-color:rgb(45, 152, 179);
 }
-
-.percentageProblemSolving p,
-.percentageCOMMUNICATION p,
-.percentageADAPTABILITY p,
-.percentageLEDEARSHIP p,
-.percentageTIMEMANANGEMENT p,
-.percentageEMOTIONALINTELLIGENCE p {
-    margin-top: 5px;
-    font-size: 14px;
+.percentageHTML{
+    font-size: 15px;
+    color: rgb(45, 152, 179);
 }
-
-/* Adjust the width of the progress bar based on percentage */
-.percentageProblemSolving span {
-    width: 60%; /* Change the width percentage as needed */
+.bar .progress-line.css{
+    width:80%;
+    background-color: rgb(45, 152, 179);
 }
-
-.percentageCOMMUNICATION span {
-    width: 90%; /* Change the width percentage as needed */
+.percentageCSS{
+    font-size: 15px;
+    color: rgb(45, 152, 179);
 }
-
-.percentageADAPTABILITY span {
-    width: 75%; /* Change the width percentage as needed */
+.bar .progress-line.photoediting{
+    width:80%;
+    background-color: rgb(45, 152, 179);
 }
-
-.percentageLEDEARSHIP span {
-    width: 90%; /* Change the width percentage as needed */
+.percentagePE{
+    font-size: 15px;
+    color: rgb(24, 192, 214);
 }
-
-.percentageTIMEMANANGEMENT span {
-    width: 90%; /* Change the width percentage as needed */
+.bar .progress-line.js{
+    width: 70%;
+    color: rgb(45, 152, 179);
 }
-
-.percentageEMOTIONALINTELLIGENCE span {
-    width: 90%; /* Change the width percentage as needed */
+.percentageJS{
+    font-size: 15px;
+    color: rgb(45, 152, 179);
 }
-
-/* Adjust the width dynamically based on percentage */
-.bar .progress-line span {
-    width: 0; /* Initial width */
+.bar .progress-line.FG{
+    width: 90%;
+    background-color: rgb(45, 152, 179);
 }
-
-.bar .percentageProblemSolving span {
-    width: 60%; /* Change the width dynamically based on the percentage */
+.percentageFG{
+    font-size: 15px;
+    color: rgb(45, 152, 179);
 }
-
-.bar .percentageCOMMUNICATION span {
-    width: 90%; /* Change the width dynamically based on the percentage */
+.Soft{
+    text-align: left;
+    font-size: 7rem;
+    margin: 5rem 0;
 }
-
-.bar .percentageADAPTABILITY span {
-    width: 75%; /* Change the width dynamically based on the percentage */
-}
-
-.bar .percentageLEDEARSHIP span {
-    width: 90%; /* Change the width dynamically based on the percentage */
-}
-
-.bar .percentageTIMEMANANGEMENT span {
-    width: 90%; /* Change the width dynamically based on the percentage */
-}
-
-.bar .percentageEMOTIONALINTELLIGENCE span {
-    width: 90%; /* Change the width dynamically based on the percentage */
-}
-
-
-/* Photos */
-.Photos {
-    padding: 100px 20px;
-    background-color: khaki;
+.softskill-bar{
+    margin-top: 0rem;
+    padding: 25px 30px;
+    background: var(--bg-color);
+    border: 2px solid var(--main-color);
+    border-radius: 10px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    flex-direction:column;
+    gap: 1rem;
+}
+.softskill-bar .bar{
+    margin: 20px 0;
+}
+.softskill-bar .bar:first-child{
+    margin-top: 0px;
+}
+.softskill-bar .bar .info{
+    margin-bottom: 5px;
+}
+.softskill-bar .bar .info span{
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 17px;
+}
+.softskill-bar .bar .progress-line{
+    height: 15px;
+    width: 100%;
+    background: khaki;
+    position: relative;
+    border-radius: 10px;
+}
+.bar .bar .progress-line span{
+    height: 100%;
+    position: absolute;
+    border-radius: 10px;
+    background: khaki;
+    cursor: pointer;
 }
 
-.Photos .MyAlbums {
-    list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.Photos .MyAlbums li {
-    margin: 10px;
-}
-
-.Photos .MyAlbums img {
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.Photos .MyAlbums img:hover {
-    transform: scale(1.05);
-}
-
-/* Contacts */
-.contacts {
-    padding: 100px 20px;
+.bar .progress-line.PROBLEMSOLVING{
+    width:60%;
     background-color:khaki;
 }
-
-.Photos .MyAlbums img {
-    border-radius: 10px; /* Add rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-    transition: transform 0.3s ease;
+.percentagePROBLEMSOLVING{
+    font-size: 15px;
+    color: khaki
+}
+.bar .progress-line.COMMUNICATION{
+    width:90%;
+    background-color: khaki;
+}
+.percentageCOMMUNICATION{
+    font-size: 15px;
+    color: khaki;
+}
+.bar .progress-line.ADAPTABILITY{
+    width:75%;
+    background-color: khaki;
+}
+.percentageADAPTABILITY{
+    font-size: 15px;
+    color: khaki;
+}
+.bar .progress-line.LEADERSHIP{
+    width: 90%;
+    color: khaki;
+}
+.percentageLEADERSHIP{
+    font-size: 15px;
+    color: khaki;
+}
+.bar .progress-line.TIMEMANANGEMENT{
+    width: 90%;
+    background-color: khaki;
+}
+.percentageTIMEMANANGEMENT{
+    font-size: 15px;
+    color: khaki;
+}
+/*HOBBIES SECTION*/
+.Hobbies{
+    font-size: 6rem;
+    margin: 5rem 0;
+}
+.hhead{
+    font-size: 6rem;
+    text-align: left ;
+    margin: 5rem 0;
+}
+.MYHOBBIES{
+    margin-top: 3rem;
+    padding: 15px 30px;
+    background: var(--bg-color);
+    border: 3px solid transparent;
+    border-radius: 10px;
+    gap: 1rem;
+    font-size: 40px;    
+    text-align: justify;
+    color: #FBE4D8;
+    font-weight: 400;
+    line-height: 1.8;
 }
 
-.Photos .MyAlbums img:hover {
-    transform: scale(1.05); /* Increase size on hover */
+/*CONTACT DESIGN*/
+.Contact{
+    background-color: var(--second-bg-color);
+}
+.contact-desc h2{
+    font-size: 40px;;
+    font-weight: 600px;
+    text-align: left;
+    margin-top: 6rem;
+    color: var(--text-color);
+}
+.contact-desc.pcon{
+    font-size: 20px;
+    font-weight: 200px;
+}
+.Contact form .input-box input,
+.Contact form textarea{
+    width: 100%;
+    padding: 2.5rem;
+    font-size: 1.8rem;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    border-radius: 2rem;
+    border: 2px solid var(--main-color);
+    margin: 1.5rem 0;
+    resize: none;
 }
 
-.contact-desc {
-    max-width: 50%;
+/*Phto section*/
+h2{
+    font-size: 40px;;
+    font-weight: 600px;
+    text-align: left;
 }
 
-.contact-desc a {
-    color: #ff6600;
-    transition: color 0.3s ease;
+.MyAlbums{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 60px;
+}
+.HEADPHOTO{
+    font-size: 6rem;
+    text-align: center ;
+    margin: 6%;
 }
 
-.contact-desc a:hover {
-    color: #e65c00;
+
+@media(max-width: 1024px){
+    #menu-icon{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 50%;
+        padding: 1rem 3rem;
+        background-color: rgba(0, 0, 0, 0.8);
+        border-left: 2px solid var(--main-color);
+        border-bottom: 2px solid var(--main-color);
+        border-bottom-left-radius: 2rem;
+        display: none;
+    }
+    .navbar a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+    .navbar.active{
+        display: block;
+    }
+    .home{
+        flex-direction: column-reverse;
+        margin: 5rem 0;
+        gap: 5rem;
+    }
+    .home-content{
+        align-items: center;
+        text-align: center;
+    }
+    .about{
+        flex-direction: column-reverse;
+        margin: 5rem 0;
+        gap: 5rem;
+    }
+    .about h2{
+        text-align: center;
+        margin: 2rem 0;
+    }
+    .about img{
+        width: 52vw;
+    }
+    .about video{
+        width: 52vw;
+    }
+    .Hobbies{
+        flex-direction: column-reverse;
+        margin: 5rem 0;
+        gap: 5rem;
+    }
+    .MyAlbums{
+        display: block;
+        align-items: center;
+        flex-direction:column-reverse;
+        margin-bottom: 20px;
+    }
+    .HEADPHOTO{
+        text-align: left;
+        margin: 2rem 0;
+    }
 }
